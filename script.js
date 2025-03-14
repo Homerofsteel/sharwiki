@@ -1835,11 +1835,11 @@ const categories = [
 ];
 
 const apiUrlBase = "https://www.speedrun.com/api/v1/leaderboards/m9dok31p/category/";
-
 document.addEventListener('DOMContentLoaded', () => {
     const sortButtons = document.querySelectorAll('.button-link');
     const toggle = document.getElementById('toggle');
-    
+    let activeSortMethod = "totalTime"; // Variable globale pour stocker la méthode de tri active
+
     if (sortButtons.length > 0) {
         sortButtons[0].classList.add('active'); // Ajouter 'active' au premier bouton
         getLeaderboardData(sortButtons[0].getAttribute('data-sort')); // Charger les données du leaderboard avec le premier tri
@@ -1854,14 +1854,14 @@ document.addEventListener('DOMContentLoaded', () => {
             button.classList.add('active');
             
             // Récupérer la méthode de tri du bouton et mettre à jour le leaderboard
-            const sortMethod = button.getAttribute('data-sort');
-            getLeaderboardData(sortMethod);
+            activeSortMethod = button.getAttribute('data-sort'); // Mettre à jour la méthode de tri active
+            getLeaderboardData(activeSortMethod);
         });
     });
 
     // Appliquer le filtre quand le toggle change
     toggle.addEventListener('change', () => {
-        getLeaderboardData();  // Récupérer à nouveau les données avec le filtre
+        filterPlayersBySixthColumn(activeSortMethod);  // Filtrer avec la méthode de tri active
     });
 });
 
@@ -1980,19 +1980,8 @@ function updateLeaderboard(categoriesData, sortMethod) {
     });
 
     // Appliquer le filtre après avoir mis à jour le leaderboard
-    filterPlayersBySixthColumn(playersData);
+    filterPlayersBySixthColumn(playersData, sortMethod);
 }
-
-// Fonction pour formater le temps (en secondes)
-function formatTime(seconds) {
-    if (seconds === null) return "-";
-    const hours = Math.floor(seconds / 3600);
-    const minutes = Math.floor((seconds % 3600) / 60);
-    const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
-    const sec = seconds % 60;
-    return `${hours}h ${formattedMinutes}m ${sec}s`;
-}
-
 
 // Fonction pour formater le temps (en secondes)
 function formatTime(seconds) {
@@ -2033,7 +2022,7 @@ function compareByAllCategories(a, b) {
     return 0;
 }
 
-function filterPlayersBySixthColumn(playersData) {
+function filterPlayersBySixthColumn(playersData, sortMethod) {
     const tableBody = document.getElementById('players-table-body');
     const rows = tableBody.querySelectorAll('tr');
 
@@ -2052,5 +2041,3 @@ function filterPlayersBySixthColumn(playersData) {
         }
     });
 }
-
-
