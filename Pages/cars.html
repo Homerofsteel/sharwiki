@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="fonts\Simpsons.otf" rel="stylesheet">
+		<title>The Simpsons Hit and Run Website</title>
+		<link rel="stylesheet" href="..\Styles_CSS\style.css">
+        <style>
+			
+	</style>
+	</head>
+	<body>
+        <div class="main-site-title" style="display: flex; align-items: center;">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/09/The_Simpsons_Hit_and_Run_Logo.png/800px-The_Simpsons_Hit_and_Run_Logo.png?20171219105759" style="width:7.5%; min-width:50px; margin-right:15px;">
+            <p style="transform: scale(1.5); margin-left: 4%;">The Simpsons Hit And Run</p>
+          </div>
+
+    <h1 class="page-title">CARS</h1>
+
+	<div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher une image..." onkeyup="showSuggestions()">
+        <div id="suggestions" class="suggestions-box"></div>
+    </div>
+
+	<div class="content-container">
+		
+	<button class="cars-button" onclick="showPreviousContent()">Previous Car</button>
+	<button class="cars-button" onclick="showNextContent()">Next Car</button>
+
+	<div class="content active">
+		<img src="..\Images\cars\family-sedan.jpg" alt="Family Sedan">
+		<p class="paragraphe">Top Speed: 120<br>Acceleration: 4.5<br>Mass: 1500<br>Health Points: 3<br>Can do Boat Jump: No<br>Can do 1-7 reset: Yes<br>Can do bridge clip: No</p>
+	</div>
+	<div class="content">
+		<img src="..\Images\cars\plow-king.jpg" alt="Plow King">
+		<p class="paragraphe">Top Speed: 125<br>Acceleration: 3<br>Mass: 4000<br>Health Points: 20<br>Can do Boat Jump: No<br>Can do 1-7 reset: Yes<br>Can do bridge clip: No</p>
+	</div>
+	<div class="content">
+		<img src="..\Images\cars\duff.jpg" alt="Duff Truck">
+		<p class="paragraphe">Top Speed: 115<br>Acceleration: 3.5<br>Mass: 2500<br>Health Points: 10<br>Can do Boat Jump: Yes (not on 60fps)<br>Can do 1-7 reset: Yes<br>Can do bridge clip: No</p>
+	</div>
+	<div class="content">
+		<img src="..\Images\cars\surveillance.jpg" alt="Surveillance Van">
+		<p class="paragraphe">Top Speed: 125<br>Acceleration: 4.5<br>Mass: 2000<br>Health Points: 5<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Forwards only - Sideways reset<br>Can do bridge clip: No</p>
+	</div>
+	<div class="content">
+		<img src="..\Images\cars\cletus.jpg" alt="Cletus' Pickup Truck">
+		<p class="paragraphe">Top Speed: 120<br>Acceleration: 3.5<br>Mass: 2000<br>Health Points: 5<br>Can do Boat Jump: Yes (only on 150+fps)<br>Can do 1-7 reset: Backwards only<br>Can do bridge clip: No</p>
+	</div>
+	<div class="content">
+		<img src="..\Images\cars\electaurus.jpg" alt="Electaurus">
+		<p class="paragraphe">Top Speed: 130<br>Acceleration: 5<br>Mass: 1500<br>Health Points: 2<br>Can do Boat Jump: Yes (only on 150+fps)<br>Can do 1-7 reset: Forwards only - Sideways reset<br>Can do bridge clip: No</p>
+	</div>
+	<div class="content">
+		<img src="..\Images\cars\rocket.jpg" alt="Rocket Car">
+		<p class="paragraphe">Top Speed: 250<br>Acceleration: 11<br>Mass: 800<br>Health Points: 0.3<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes<br>Can do bridge clip: Yes</p>
+	</div>
+			<div class="content">
+				<img src="..\Images\cars\honor-roller.jpg" alt="Honor Roller">
+				<p class="paragraphe">Top Speed: 125<br>Acceleration: 6<br>Mass: 1200<br>Health Points: 1.5<br>Can do Boat Jump: No<br>Can do 1-7 reset: Forwards only - Sideways reset<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\mr-plow.jpg" alt="Mr. Plow">
+				<p class="paragraphe">Top Speed: 130<br>Acceleration: 5<br>Mass: 2500<br>Health Points: 7<br>Can do Boat Jump: No<br>Can do 1-7 reset: Yes - Sideways reset<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\limo.jpg" alt="Limo">
+				<p class="paragraphe">Top Speed: 125<br>Acceleration: 5<br>Mass: 2500<br>Health Points: 8<br>Can do Boat Jump: No<br>Can do 1-7 reset: Yes<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\fire-truck.jpg" alt="Fire Truck">
+				<p class="paragraphe">Top Speed: 140<br>Acceleration: 3.5<br>Mass: 4000<br>Health Points: 18<br>Can do Boat Jump: Yes (only on 150+fps)<br>Can do 1-7 reset: Forwards only<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\wwii.jpg" alt="WWII Vehicle">
+				<p class="paragraphe">Top Speed: 125<br>Acceleration: 5<br>Mass: 2000<br>Health Points: 5<br>Can do Boat Jump: Yes (only on 150+fps)<br>Can do 1-7 reset: No<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\moe.jpg" alt="Moe's Sedan">
+				<p class="paragraphe">Top Speed: 130<br>Acceleration: 5.5<br>Mass: 1500<br>Health Points: 3<br>Can do Boat Jump: Yes (only on 100+fps)<br>Can do 1-7 reset: Yes but Sidewasy reset for Forward<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\monorail.jpg" alt="Monorail">
+				<p class="paragraphe">Top Speed: 120<br>Acceleration: 4<br>Mass: 2000<br>Health Points: 1.5<br>Can do Boat Jump: No<br>Can do 1-7 reset: Yes<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\malibu.jpg" alt="Malibu Stacy">
+				<p class="paragraphe">Top Speed: 135<br>Acceleration: 7<br>Mass: 1000<br>Health Points: 1.5<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Forwards only - Sideways reset<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\school.jpg" alt="School Bus">
+				<p class="paragraphe">Top Speed: 130<br>Acceleration: 4.5<br>Mass: 3500<br>Health Points: 15<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\donut.jpg" alt="Donut Truck">
+				<p class="paragraphe">Top Speed: 115<br>Acceleration: 5<br>Mass: 2000<br>Health Points: 5<br>Can do Boat Jump: Yes (only on 100+fps)<br>Can do 1-7 reset: Forwards only - Sideways reset<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\nerd.jpg" alt="Nerd Car">
+				<p class="paragraphe">Top Speed: 125<br>Acceleration: 6<br>Mass: 1000<br>Health Points: 2.5<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Forwards only - Sideways reset<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\skinner.jpg" alt="Skinner Sedan">
+				<p class="paragraphe">Top Speed: 130<br>Acceleration: 6<br>Mass: 1500<br>Health Points: 3<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes but Sideway resets<br>Can do bridge clip: Yes but can't get over the void</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\book.jpg" alt="Book Burning Van">
+				<p class="paragraphe">Top Speed: 130<br>Acceleration: 5<br>Mass: 2500<br>Health Points: 8<br>Can do Boat Jump: Yes (only on 100+fps)<br>Can do 1-7 reset: Yes but Sideways resets<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\knight-boat.jpg" alt="Knight Boat">
+				<p class="paragraphe">Top Speed: 150<br>Acceleration: 8.5<br>Mass: 1500<br>Health Points: 2.5<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Forwards only<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\canyonero.jpg" alt="Canyonero">
+				<p class="paragraphe">Top Speed: 135<br>Acceleration: 5.5<br>Mass: 3000<br>Health Points: 13<br>Can do Boat Jump: No<br>Can do 1-7 reset: Forwards only - Sideways reset<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\tractor.jpg" alt="Tractor">
+				<p class="paragraphe">Top Speed: 140<br>Acceleration: 6<br>Mass: 2000<br>Health Points: 4.5<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Backwards only<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\curator.jpg" alt="Curator">
+				<p class="paragraphe">Top Speed: 135<br>Acceleration: 7<br>Mass: 1500<br>Health Points: 2.5<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\krusty-limo.jpg" alt="Krusty's Limo">
+				<p class="paragraphe">Top Speed: 135<br>Acceleration: 6<br>Mass: 2500<br>Health Points: 8<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes<br>Can do bridge clip: Yes but can't get over the void</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\kremlin.jpg" alt="Kremlin">
+				<p class="paragraphe">Top Speed: 135<br>Acceleration: 6<br>Mass: 1200<br>Health Points: 3<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes but Sideways resets<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\clown.jpg" alt="Clown Car">
+				<p class="paragraphe">Top Speed: 140<br>Acceleration: 7<br>Mass: 1200<br>Health Points: 2<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes but only by climbing over door and reset at the top<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\atv.jpg" alt="Quad Bike">
+				<p class="paragraphe">Top Speed: 125<br>Acceleration: 7.8<br>Mass: 500<br>Health Points: 0.5<br>Can do Boat Jump: No<br>Can do 1-7 reset: No<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\longhorn.jpg" alt="Longhorn">
+				<p class="paragraphe">Top Speed: 145<br>Acceleration: 7.5<br>Mass: 1500<br>Health Points: 3<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Forwards only<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\homer.jpg" alt="Car Built For Homer">
+				<p class="paragraphe">Top Speed: 160<br>Acceleration: 7<br>Mass: 2000<br>Health Points: 5<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes but Forwards with Sideways reset<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\cola-truck.jpg" alt="Cola Truck">
+				<p class="paragraphe">Top Speed: 135<br>Acceleration: 6<br>Mass: 1200<br>Health Points: 3<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\police.jpg" alt="Police Car">
+				<p class="paragraphe">Top Speed: 155<br>Acceleration: 7<br>Mass: 2000<br>Health Points: 4<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes but Forward with Sideways reset<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\hover-car.jpg" alt="Hover Car">
+				<p class="paragraphe">Top Speed: 160<br>Acceleration: 8<br>Mass: 1500<br>Health Points: 2<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Forwards only<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\carro-loco.jpg" alt="El Carro Loco">
+				<p class="paragraphe">Top Speed: 150<br>Acceleration: 7<br>Mass: 1500<br>Health Points: 3<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\obwt.jpg" alt="Obliteratatron Big Wheel Truck">
+				<p class="paragraphe">Top Speed: 110<br>Acceleration: 7.5<br>Mass: 4000<br>Health Points: 18<br>Can do Boat Jump: No<br>Can do 1-7 reset: Yes<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\ferrini.jpg" alt="Ferrini">
+				<p class="paragraphe">Top Speed: 150<br>Acceleration: 8<br>Mass: 1300<br>Health Points: 2<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\globex.jpg" alt="Globex Super Villain Car">
+				<p class="paragraphe">Top Speed: 160<br>Acceleration: 8.5<br>Mass: 1500<br>Health Points: 2<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: No<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\armored.jpg" alt="Armored Truck">
+				<p class="paragraphe">Top Speed: 130<br>Acceleration: 3.5<br>Mass: 4000<br>Health Points: 15<br>Can do Boat Jump: Yes (only on 100+fps)<br>Can do 1-7 reset: Backwards only<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\chase.jpg" alt="Chase Sedan">
+				<p class="paragraphe">Top Speed: 150<br>Acceleration: 9<br>Mass: 1800<br>Health Points: 4<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes but Backwards with sideway reset<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\bandit.jpg" alt="Bandit">
+				<p class="paragraphe">Top Speed: 160<br>Acceleration: 8<br>Mass: 1500<br>Health Points: 3<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\stutz.jpg" alt="36 Stutz Bearcat">
+				<p class="paragraphe">Top Speed: 160<br>Acceleration: 8.5<br>Mass: 1500<br>Health Points: 2<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Forwards only with sideway reset<br>Can do bridge clip: No</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\planet-hype.jpg" alt="Planet Hype 50's Car">
+				<p class="paragraphe">Top Speed: 150<br>Acceleration: 7<br>Mass: 2000<br>Health Points: 3<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\70.jpg" alt="70s Sports Car">
+				<p class="paragraphe">Top Speed: 165<br>Acceleration: 8.5<br>Mass: 1500<br>Health Points: 2.5<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes but Forwards with sideway reset<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\zombie.jpg" alt="Zombie Car">
+				<p class="paragraphe">Top Speed: 160<br>Acceleration: 9.5<br>Mass: 1750<br>Health Points: 2<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: No<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\hearse.jpg" alt="Hearse">
+				<p class="paragraphe">Top Speed: 160<br>Acceleration: 8.5<br>Mass: 2000<br>Health Points: 6<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Yes<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\hover-bike.jpg" alt="Hover Bike">
+				<p class="paragraphe">Top Speed: 180<br>Acceleration: 8.5<br>Mass: 1000<br>Health Points: 2<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Backwards only<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\owrc.jpg" alt="Open Wheel Race Car">
+				<p class="paragraphe">Top Speed: 200<br>Acceleration: 10<br>Mass: 800<br>Health Points: 1<br>Can do Boat Jump: Yes<br>Can do 1-7 reset: Backwards only<br>Can do bridge clip: Yes</p>
+			</div>
+			<div class="content">
+				<img src="..\Images\cars\rc.jpg" alt="RC Car">
+				<p class="paragraphe">Top Speed: 110<br>Acceleration: 6<br>Mass: 1500<br>Health Points: 3<br>Can do Boat Jump: Yes (only on 200fps+)<br>Can do 1-7 reset: No<br>Can do bridge clip: No</p>
+			</div>
+	</div>
+	
+            
+    <script>
+        var currentContentIndex = 0;
+        var contents = document.querySelectorAll('.content');
+
+        function showNextContent() {
+            // Masquer le contenu actuellement affiché
+            contents[currentContentIndex].classList.remove('active');
+            
+            // Passer à l'indice suivant, en bouclant au début si nécessaire
+            currentContentIndex = (currentContentIndex + 1) % contents.length;
+            
+            // Afficher le nouveau contenu
+            contents[currentContentIndex].classList.add('active');
+        }
+
+
+		
+		function showPreviousContent() {
+    // Hide the currently displayed content
+    contents[currentContentIndex].classList.remove('active');
+    
+    // Move to the previous index, wrapping around to the end if needed
+    currentContentIndex = (currentContentIndex - 1 + contents.length) % contents.length;
+    
+    // Show the previous content
+    contents[currentContentIndex].classList.add('active');
+}
+
+        
+        function showSuggestions() {
+    const input = document.getElementById('search-input').value.toLowerCase();
+    const suggestionsBox = document.getElementById('suggestions');
+    suggestionsBox.innerHTML = '';
+
+    if (input) {
+        const images = document.querySelectorAll('.content img');
+        const suggestions = Array.from(images).filter(image => image.alt.toLowerCase().includes(input));
+        
+        suggestions.forEach(suggestion => {
+            const div = document.createElement('div');
+            div.className = 'suggestion';
+
+            const img = document.createElement('img');
+            img.src = suggestion.src;
+            img.alt = suggestion.alt;
+
+            const span = document.createElement('span');
+            span.innerText = suggestion.alt;
+
+            div.appendChild(img);
+            div.appendChild(span);
+            div.onclick = () => displayImage(suggestion);
+            suggestionsBox.appendChild(div);
+        });
+    }
+}
+
+function displayImage(image) {
+    const contents = document.querySelectorAll('.content');
+    const suggestionsBox = document.getElementById('suggestions');
+    suggestionsBox.innerHTML = '';
+
+    // Réinitialiser la valeur de l'input de recherche
+    document.getElementById('search-input').value = '';
+
+    contents[currentContentIndex].classList.remove('active');
+
+    const index = Array.from(contents).findIndex(content => content.querySelector('img').src === image.src);
+    currentContentIndex = index;
+    contents[currentContentIndex].classList.add('active');
+}
+    </script>
+</body>
+</html>

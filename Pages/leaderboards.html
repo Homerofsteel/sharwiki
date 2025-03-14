@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<link href="fonts\Simpsons.otf" rel="stylesheet">
+		<title>The Simpsons Hit and Run Website</title>
+		<link rel="stylesheet" href="..\Styles_CSS\style.css">
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            align-items: center;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: lightgrey;
+        }
+        .table-container {
+    display: flex;
+    justify-content: center;
+} .button-link.active {
+    background-color: lightgray;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main-site-title">
+        <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/09/The_Simpsons_Hit_and_Run_Logo.png/800px-The_Simpsons_Hit_and_Run_Logo.png?20171219105759" style="width:8%;float:left">
+          <p style="transform: scale(1.5); margin-left: 27%;">The Simpsons Hit And Run</p>
+      </div>
+    <div style="display: flex;
+    flex-direction: column;
+    align-items: center;">
+      <h1 class="page-title">Leaderboard Times</h1>
+    <div class="sort-buttons-container">
+        <button class="button-link" style="font-size: 16px" data-sort="totalTime" >Sort By <br>All Categories</button>
+        <button class="button-link" style="font-size: 16px" data-sort="asm">Sort By <br>All Story Missions</button>
+        <button class="button-link" style="font-size: 16px" data-sort="any%">Sort By<br> Any%</button>
+        <button class="button-link" style="font-size: 16px" data-sort="hundo">Sort By <br>100%</button>
+        <button class="button-link" style="font-size: 16px" data-sort="ng+">Sort By <br>NG+</button>
+        <button class="button-link" style="font-size: 16px" data-sort="nmw">Sort By <br>No Mission Warps</button>
+        <button class="button-link" style="font-size: 16px" data-sort="atnlr">Sort By<br> All Tasks NLR</button>
+    </div>
+    <div class="toggle-container">
+        <span class="toggle-text-left">(1) represents the player's position in the category leaderboard.</span>
+        <label class="toggle-label">
+            <input type="checkbox" id="toggle">
+            <span class="toggle-switch"></span>
+            <span class="toggle-text">Only show runners which have time in all 6 categories</span>
+        </label>
+    </div>
+
+    <div class="table-container">
+    <table id="times-table">
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>All Story Missions</th>
+                <th>Any%</th>
+                <th>100%</th>
+                <th>NG+</th>
+                <th>No Mission Warps</th>
+                <th>All Tasks NLR</th>
+                <th>Sum Of All Cats</th>
+            </tr>
+        </thead>
+        <tbody id="players-table-body">
+        </tbody>
+    </table>
+</div>
+</div>
+
+    </table>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "shar-site",
+  "version": "1.0.0",
+  "main": "node.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.7",
+    "ws": "^8.18.1"
+  }
+}

@@ -1,0 +1,2056 @@
+let playerData =new Map([
+    [
+        "v81100p8",
+        "HomerOfSteel"
+    ],
+    [
+        "7j4zpr5x",
+        "12_Kelvin"
+    ],
+    [
+        "y8d3gox6",
+        "LiquidWiFi"
+    ],
+    [
+        "98rm716j",
+        "chris_speedruns"
+    ],
+    [
+        "j401ke58",
+        "thezrn"
+    ],
+    [
+        "v8lp532j",
+        "Baconman12"
+    ],
+    [
+        "8grvmvpx",
+        "NeonicPlays"
+    ],
+    [
+        "qjnp9rw8",
+        "Gordo"
+    ],
+    [
+        "v8l267rx",
+        "TickerSR"
+    ],
+    [
+        "v815l1lj",
+        "Derek"
+    ],
+    [
+        "18vzwknj",
+        "ducbob"
+    ],
+    [
+        "68w1w7qx",
+        "KamaCrimson"
+    ],
+    [
+        "qjompnlx",
+        "dylrsmith"
+    ],
+    [
+        "v81v6l58",
+        "Critch_"
+    ],
+    [
+        "8rplrv6j",
+        "PotatoOnCrack"
+    ],
+    [
+        "qxkvk02j",
+        "Greenbulmers"
+    ],
+    [
+        "o864zm0j",
+        "Vapo"
+    ],
+    [
+        "68w2m48g",
+        "haz"
+    ],
+    [
+        "48gw15yj",
+        "Bamford"
+    ],
+    [
+        "18q4rndx",
+        "AtomicCaleb"
+    ],
+    [
+        "zx7gw4vx",
+        "97Timbs"
+    ],
+    [
+        "8l0z43v8",
+        "mayorquimby"
+    ],
+    [
+        "98rr0gd8",
+        "VGmaster"
+    ],
+    [
+        "o866lpp8",
+        "Spearmeister"
+    ],
+    [
+        "e8ep01px",
+        "crazytonedog"
+    ],
+    [
+        "8v5292nj",
+        "Greeny0359"
+    ],
+    [
+        "dx37ko68",
+        "KSFQ"
+    ],
+    [
+        "8ge6lm1j",
+        "sam37RTL"
+    ],
+    [
+        "j5w9z0gj",
+        "ResidentAmber"
+    ],
+    [
+        "j92doew8",
+        "Tillbert13"
+    ],
+    [
+        "8g5lq1rj",
+        "AnAnnoyingHamster"
+    ],
+    [
+        "8l0ov648",
+        "finness_"
+    ],
+    [
+        "qjo2n278",
+        "Guff"
+    ],
+    [
+        "e8e3v2j0",
+        "slendbed"
+    ],
+    [
+        "jn3genqx",
+        "Aventrall"
+    ],
+    [
+        "kjp7l04j",
+        "Sid3300"
+    ],
+    [
+        "e8eewep8",
+        "Weengell"
+    ],
+    [
+        "jn9le32x",
+        "CodyJE21"
+    ],
+    [
+        "j2ywmpp8",
+        "Towsen"
+    ],
+    [
+        "98r51l6x",
+        "AskJT"
+    ],
+    [
+        "v8lw5dvx",
+        "jpecimage"
+    ],
+    [
+        "816r2erx",
+        "Doc99"
+    ],
+    [
+        "qj2peo68",
+        "Nytheris"
+    ],
+    [
+        "68we0vl8",
+        "KthRam"
+    ],
+    [
+        "18qg69dx",
+        "frazzle_dazzle1"
+    ],
+    [
+        "1xy3kynj",
+        "ColaTruck"
+    ],
+    [
+        "v813w9qx",
+        "Tyfuzzle25"
+    ],
+    [
+        "8lpmemrj",
+        "PelicanVI"
+    ],
+    [
+        "8qz07r78",
+        "Axington123"
+    ],
+    [
+        "68w07z3j",
+        "Gibstack"
+    ],
+    [
+        "7j4ml2vj",
+        "AquaDreams"
+    ],
+    [
+        "zx74e4vx",
+        "Ben___"
+    ],
+    [
+        "8dwg36mj",
+        "plugsocketxxl"
+    ],
+    [
+        "18v43928",
+        "dtops24"
+    ],
+    [
+        "xk1v9okj",
+        "seymourbuttsz"
+    ],
+    [
+        "8ge4027j",
+        "mibach"
+    ],
+    [
+        "xz7zn59j",
+        "Exa_eille"
+    ],
+    [
+        "5j59rzzx",
+        "Orchlon"
+    ],
+    [
+        "j921dpw8",
+        "Cozycorn"
+    ],
+    [
+        "xz776d4j",
+        "ariccat"
+    ],
+    [
+        "j516qnq8",
+        "Clifforus"
+    ],
+    [
+        "8l0pvp78",
+        "BeingofUniverse"
+    ],
+    [
+        "18vnrgvj",
+        "Gadie"
+    ],
+    [
+        "1xy5vzy8",
+        "m0m0"
+    ],
+    [
+        "kj9n3r84",
+        "Cythertime"
+    ],
+    [
+        "86ng4m5x",
+        "LCplFalco"
+    ],
+    [
+        "0jmkg2zx",
+        "VeryOriginal95"
+    ],
+    [
+        "18qm17qx",
+        "worbgge"
+    ],
+    [
+        "j03engrj",
+        "ricksanity"
+    ],
+    [
+        "8dprodl8",
+        "Zyberex"
+    ],
+    [
+        "8d37ovox",
+        "Asapasa"
+    ],
+    [
+        "1zxzdnjq",
+        "LP3Cinema"
+    ],
+    [
+        "v8lo1v8m",
+        "RobotCrocodilz"
+    ],
+    [
+        "1y8dv986",
+        "fastfruitman"
+    ],
+    [
+        "zx75pqr8",
+        "Cal_SR"
+    ],
+    [
+        "8v6kzk5x",
+        "Dcon"
+    ],
+    [
+        "8grgrg1x",
+        "00tylerpYT"
+    ],
+    [
+        "v8lyk7jm",
+        "EZScape"
+    ],
+    [
+        "ge8e2o80",
+        "pet_petiguana"
+    ],
+    [
+        "xz70ml9j",
+        "basedjonesy"
+    ],
+    [
+        "7j4r6m58",
+        "Nostalgia64"
+    ],
+    [
+        "y8d191o8",
+        "Benpai"
+    ],
+    [
+        "zx7wmkq8",
+        "CookiePgC"
+    ],
+    [
+        "j2y3dgp8",
+        "slateermine2049"
+    ],
+    [
+        "dx39r27x",
+        "djlambton"
+    ],
+    [
+        "xz9vw948",
+        "Alessio954"
+    ],
+    [
+        "xz726l0j",
+        "gigacroc"
+    ],
+    [
+        "1xy546n8",
+        "La_Lapin"
+    ],
+    [
+        "qj2m9kn8",
+        "PlayerGameSK"
+    ],
+    [
+        "jpmk4l2j",
+        "Optic_Rainfall"
+    ],
+    [
+        "j2yr37n8",
+        "QuizzicuL"
+    ],
+    [
+        "qjozd1l8",
+        "ProjectOP"
+    ],
+    [
+        "qxk351k8",
+        "Lexi_Ni_Anord"
+    ],
+    [
+        "v81n1zqj",
+        "Mage"
+    ],
+    [
+        "8gre301x",
+        "FlexVonSexPecs"
+    ],
+    [
+        "8q6q0g7j",
+        "Seagulls_01"
+    ],
+    [
+        "48gmpl78",
+        "Melvosh"
+    ],
+    [
+        "1xy9l9zj",
+        "ThermalSquare"
+    ],
+    [
+        "v8lwqz7x",
+        "Crimbos69"
+    ],
+    [
+        "48grmrxp",
+        "Saiyanz"
+    ],
+    [
+        "18qpw00x",
+        "discomfort"
+    ],
+    [
+        "8wl94rzj",
+        "Suratos"
+    ],
+    [
+        "y8d33elx",
+        "seasonerr"
+    ],
+    [
+        "qjnkry1j",
+        "luke_runs"
+    ],
+    [
+        "8r747z6j",
+        "JammerStock"
+    ],
+    [
+        "68wmonzx",
+        "Willking15"
+    ],
+    [
+        "v8ly4yrj",
+        "giaNco"
+    ],
+    [
+        "8g2mpm2j",
+        "Lukas_The_Donut"
+    ],
+    [
+        "y8drz9ox",
+        "AntiNormalizer"
+    ],
+    [
+        "jop7ve3x",
+        "Poppi64"
+    ],
+    [
+        "1xym2zvx",
+        "Relenter"
+    ],
+    [
+        "dx396z7x",
+        "Frc"
+    ],
+    [
+        "jpr77408",
+        "MooseGC"
+    ],
+    [
+        "jn63d1dx",
+        "Morganium"
+    ],
+    [
+        "gpj0g4xw",
+        "zoton2"
+    ],
+    [
+        "y8dv42l8",
+        "xSparrow"
+    ],
+    [
+        "8l0k1778",
+        "DollyPartonFan12"
+    ],
+    [
+        "jmo0rqe8",
+        "choripanycristi"
+    ],
+    [
+        "jmpw57ej",
+        "Kabel"
+    ],
+    [
+        "81m41er8",
+        "Horsemachine"
+    ],
+    [
+        "xyky96v8",
+        "Gankplang_"
+    ],
+    [
+        "zxz5vr4x",
+        "rodge"
+    ],
+    [
+        "8l4z2rrj",
+        "Misterowlman"
+    ],
+    [
+        "zx7p240x",
+        "jokingbomb"
+    ],
+    [
+        "x773pgqx",
+        "ArchieUA"
+    ],
+    [
+        "98rq5vqx",
+        "TweedyJono"
+    ],
+    [
+        "kj92v784",
+        "Martyrr"
+    ],
+    [
+        "j9rryyvj",
+        "ewil0008"
+    ],
+    [
+        "1xy1e9yx",
+        "Spam78"
+    ],
+    [
+        "j2w3zelj",
+        "Vercherin"
+    ],
+    [
+        "8dw5p3lj",
+        "paddythegamer"
+    ],
+    [
+        "qxkdpn7j",
+        "XleboMatb"
+    ],
+    [
+        "qxkegz7x",
+        "ecs1312"
+    ],
+    [
+        "qxk0y928",
+        "Scruffmuff"
+    ],
+    [
+        "7j4ok581",
+        "CtrlTab"
+    ],
+    [
+        "v8ld0vjm",
+        "sub_WHISTLE"
+    ],
+    [
+        "xk4em37j",
+        "ElecTrixZZ"
+    ],
+    [
+        "qj20vknx",
+        "BeatBattles"
+    ],
+    [
+        "8rpkprdj",
+        "C_layton"
+    ],
+    [
+        "0jmlm9e8",
+        "LT"
+    ],
+    [
+        "xz2e6q9x",
+        "s0uzaax"
+    ],
+    [
+        "jop39k3x",
+        "LobsterDoo"
+    ],
+    [
+        "qj2z2poj",
+        "ShrimpiiBoii"
+    ],
+    [
+        "o86le3q8",
+        "buggles201"
+    ],
+    [
+        "1xyl5lyj",
+        "KahunaMagic"
+    ],
+    [
+        "j26knw7x",
+        "Bartgamer07"
+    ],
+    [
+        "qjn6rp2x",
+        "SorHigh"
+    ],
+    [
+        "j927k678",
+        "Larrakin"
+    ],
+    [
+        "kj9wqp78",
+        "HausBlvd"
+    ],
+    [
+        "98rpqkgj",
+        "Purple"
+    ],
+    [
+        "j03qkdwj",
+        "Mulhern"
+    ],
+    [
+        "j0w23o38",
+        "MoonaHoshinova"
+    ],
+    [
+        "98rlzd81",
+        "ThePieTurtle101"
+    ],
+    [
+        "jn9wkqqx",
+        "Badgerbar"
+    ],
+    [
+        "jo3od00j",
+        "Lukenson"
+    ],
+    [
+        "x7w13oq8",
+        "CiaranOg78"
+    ],
+    [
+        "jn9v99dx",
+        "Ds_supermatt"
+    ],
+    [
+        "x3wlko2j",
+        "Pars3ct"
+    ],
+    [
+        "xzlro0n8",
+        "ashalpino"
+    ],
+    [
+        "j03oy39j",
+        "F1Sammy"
+    ],
+    [
+        "8qrdeqdj",
+        "CainCalifornia"
+    ],
+    [
+        "1xyrgeyj",
+        "HarktheHuman"
+    ],
+    [
+        "8635wq08",
+        "satchl99"
+    ],
+    [
+        "xz9d9ye8",
+        "Techno2123"
+    ],
+    [
+        "0jmqm4nx",
+        "The4thGenGamer"
+    ],
+    [
+        "j2yemyo8",
+        "MushyGMD"
+    ],
+    [
+        "68wp9zlx",
+        "Benizzy"
+    ],
+    [
+        "7j4nq9dx",
+        "NTRG"
+    ],
+    [
+        "v8169p3x",
+        "LiamManTheAngry"
+    ],
+    [
+        "x76d946j",
+        "_donkers_"
+    ],
+    [
+        "j03o0e3j",
+        "GenKii"
+    ],
+    [
+        "x35wm12j",
+        "cxrky"
+    ],
+    [
+        "8rpr336j",
+        "Dispersions"
+    ],
+    [
+        "o861edpj",
+        "flaiyr"
+    ],
+    [
+        "68w3kdvj",
+        "TediousThrone"
+    ],
+    [
+        "e8e42d2x",
+        "PurplePhury3412"
+    ],
+    [
+        "qj2plq78",
+        "vKrnz"
+    ],
+    [
+        "jopye2ex",
+        "Lachycorn"
+    ],
+    [
+        "jnz1ze2j",
+        "Joey94"
+    ],
+    [
+        "zxzyrm0j",
+        "Bregermann"
+    ],
+    [
+        "j421zp5x",
+        "CraigM"
+    ],
+    [
+        "zx79d7yj",
+        "lsaiahhh"
+    ],
+    [
+        "j031eywj",
+        "Ndee"
+    ],
+    [
+        "qjnwgydj",
+        "MakS54"
+    ],
+    [
+        "86v2l65j",
+        "AlbiTheShroom"
+    ],
+    [
+        "7j420d5x",
+        "Brocky"
+    ],
+    [
+        "866ggop8",
+        "ItsBlueVR"
+    ],
+    [
+        "8r710w6j",
+        "MapleSyrupp"
+    ],
+    [
+        "7j4e67lx",
+        "Supersonic_inc"
+    ],
+    [
+        "8e96vm2j",
+        "GordoLeal"
+    ],
+    [
+        "1xyp5dvx",
+        "Curlysnail"
+    ],
+    [
+        "kjpd4z2j",
+        "That_Guy_Ky"
+    ],
+    [
+        "e8ed697x",
+        "Gordon_CMB"
+    ],
+    [
+        "8l0p0d78",
+        "CabooseDM"
+    ],
+    [
+        "8en4lr28",
+        "TheLouieCopeland"
+    ],
+    [
+        "8r2zwr6x",
+        "Liydan_"
+    ],
+    [
+        "e8erdloj",
+        "ConnorGB"
+    ],
+    [
+        "e8em0dx0",
+        "FattyTheFatHead"
+    ],
+    [
+        "8633w058",
+        "Ludence"
+    ],
+    [
+        "o86wzk0x",
+        "Kafka"
+    ],
+    [
+        "8wkm4vl8",
+        "FittedMushroom"
+    ],
+    [
+        "qj23nlxk",
+        "Kittt"
+    ],
+    [
+        "j924l678",
+        "ItMe_Casual"
+    ],
+    [
+        "18v29vjl",
+        "Len"
+    ],
+    [
+        "18qvwd7x",
+        "MM24"
+    ],
+    [
+        "j2wpee6j",
+        "ketchup9000"
+    ],
+    [
+        "0jmo97n8",
+        "Rhodders"
+    ],
+    [
+        "1xy3w5mj",
+        "Rewer"
+    ],
+    [
+        "8dg323l8",
+        "KevoAyyyy"
+    ],
+    [
+        "pj0d593x",
+        "joshwaaaa_"
+    ],
+    [
+        "qjor6w0j",
+        "No1FeederUK_"
+    ],
+    [
+        "18v4gv28",
+        "joech"
+    ],
+    [
+        "j4rnlzm8",
+        "iGTP"
+    ],
+    [
+        "8g2km37j",
+        "Ianinabox"
+    ],
+    [
+        "18qz7n78",
+        "Tebt_W"
+    ],
+    [
+        "o86plg3j",
+        "PopTartPony"
+    ],
+    [
+        "8l0r6628",
+        "Jamboltheads"
+    ],
+    [
+        "18qo1ddj",
+        "BoyManDog"
+    ],
+    [
+        "jn9q2k1x",
+        "pokemaniacjunk"
+    ],
+    [
+        "18vdwz58",
+        "MudkipSR"
+    ],
+    [
+        "e8ee3l28",
+        "Xeevaleev"
+    ],
+    [
+        "v816drrx",
+        "Ushikagu"
+    ],
+    [
+        "8l3er9r8",
+        "Dynalope"
+    ],
+    [
+        "v48gm28p",
+        "Tirean"
+    ],
+    [
+        "j4qg5nmx",
+        "Mago_dos_Cereais"
+    ],
+    [
+        "qjoekzn8",
+        "heisen_rock"
+    ],
+    [
+        "814rzq58",
+        "speedrunninglife"
+    ],
+    [
+        "8ge0gp2j",
+        "Elsen"
+    ],
+    [
+        "qj2lw3lx",
+        "Moofle"
+    ],
+    [
+        "v8l1mqrj",
+        "j663beast"
+    ],
+    [
+        "v81dpw58",
+        "ort"
+    ],
+    [
+        "8wk53vz8",
+        "DJBlueDaPest"
+    ],
+    [
+        "qj2m3678",
+        "actionpacked4"
+    ],
+    [
+        "v814l458",
+        "ChillWizard"
+    ],
+    [
+        "48gpor78",
+        "MyBig4Head"
+    ],
+    [
+        "48gmn0p8",
+        "Igneii"
+    ],
+    [
+        "1xyk4w8r",
+        "DanTheEnigma"
+    ],
+    [
+        "pj0679jw",
+        "kayumon"
+    ],
+    [
+        "0jm41myj",
+        "TranceGodz"
+    ],
+    [
+        "j5wdp6qj",
+        "EloquentGrace"
+    ],
+    [
+        "8en9zz28",
+        "Umilomarr"
+    ],
+    [
+        "qxkdm69j",
+        "Moistchip01"
+    ],
+    [
+        "x3w30r2j",
+        "VineGreen"
+    ],
+    [
+        "8rplr3wj",
+        "Bancakes"
+    ],
+    [
+        "zxzq3gnx",
+        "TheRichH0b0"
+    ],
+    [
+        "7j4r0m81",
+        "MrIneptitude"
+    ],
+    [
+        "7j4rlmv8",
+        "kiyumi"
+    ],
+    [
+        "v8lv1d7j",
+        "KiMa"
+    ],
+    [
+        "8vr4ygex",
+        "AbrahamItchy"
+    ],
+    [
+        "5j52n9wj",
+        "ultimatedragon111"
+    ],
+    [
+        "qj222njk",
+        "ILikeBlueChezz"
+    ],
+    [
+        "81mz5p38",
+        "RoastedBunny"
+    ],
+    [
+        "8v63ngnx",
+        "Mimsty"
+    ],
+    [
+        "j96lmlrj",
+        "RegenTropfen"
+    ],
+    [
+        "8d4n2zg8",
+        "vazzot"
+    ],
+    [
+        "18q2rmw8",
+        "Chauncy"
+    ],
+    [
+        "jprzd6k8",
+        "doonybaby"
+    ],
+    [
+        "kj9k3rw8",
+        "bont"
+    ],
+    [
+        "o8644wqj",
+        "winsuper"
+    ],
+    [
+        "jpr3lz48",
+        "Hyran"
+    ],
+    [
+        "8rpo6n3j",
+        "CarolimaBean"
+    ],
+    [
+        "8e67ny7j",
+        "Tzhaarzan"
+    ],
+    [
+        "y8d3vmox",
+        "kongy654"
+    ],
+    [
+        "zx7q71y8",
+        "YanmegaMan"
+    ],
+    [
+        "kjp460jq",
+        "m13"
+    ],
+    [
+        "xyl95kzj",
+        "Joacs"
+    ],
+    [
+        "zx7062yj",
+        "JSBx99"
+    ],
+    [
+        "kjp440kj",
+        "Nightwish"
+    ],
+    [
+        "8d30dwlx",
+        "TheFatMassiveW"
+    ],
+    [
+        "o86p2rpj",
+        "BartmastA"
+    ],
+    [
+        "qjovkyex",
+        "Zackuloid"
+    ],
+    [
+        "j95rvkr8",
+        "DoctorFoogus"
+    ],
+    [
+        "18qr7qjn",
+        "ViperUK"
+    ],
+    [
+        "jn99y9dx",
+        "mr300s"
+    ],
+    [
+        "7j4wv2mx",
+        "PrplDlfn"
+    ],
+    [
+        "1xy3p1nj",
+        "DefectiveDagger"
+    ],
+    [
+        "0jmkrznx",
+        "Jamhead"
+    ],
+    [
+        "e8ev42x0",
+        "lilfatkid"
+    ],
+    [
+        "x7qeey68",
+        "Greenferret"
+    ],
+    [
+        "x7m4ee0x",
+        "Chero"
+    ],
+    [
+        "qjov2rlx",
+        "CymruAmByth2410"
+    ],
+    [
+        "8v5g0yej",
+        "Lizzardgorts"
+    ],
+    [
+        "kj9ydnnx",
+        "camberto5"
+    ],
+    [
+        "qjo3r9ej",
+        "SGCSam"
+    ],
+    [
+        "pj0vqwrx",
+        "CuriousStark"
+    ],
+    [
+        "5j56176x",
+        "CritikalError"
+    ],
+    [
+        "o86k40px",
+        "Andious"
+    ],
+    [
+        "qj21568k",
+        "Flobberworm4"
+    ],
+    [
+        "zx7ekrq8",
+        "GiantClam"
+    ],
+    [
+        "dx35w1kj",
+        "Cpt.Agman"
+    ],
+    [
+        "zxz4614j",
+        "rekrab"
+    ],
+    [
+        "dx3n256j",
+        "Ajarnie"
+    ],
+    [
+        "j0w2rg38",
+        "Mr_Funkster"
+    ],
+    [
+        "8l4ke5lj",
+        "KeysTv"
+    ],
+    [
+        "18vkwlvj",
+        "MrKamek123"
+    ],
+    [
+        "0jmq1wex",
+        "ClicheUsername"
+    ],
+    [
+        "8q6gwmdj",
+        "Jermoi"
+    ],
+    [
+        "81669vpx",
+        "M1lleer"
+    ],
+    [
+        "7j4709vj",
+        "RyukUK"
+    ],
+    [
+        "qj2yzo8k",
+        "derek31047"
+    ],
+    [
+        "8wk2eq48",
+        "MachWing"
+    ],
+    [
+        "8q6m2pdj",
+        "SerenKnight"
+    ],
+    [
+        "8q5zvno8",
+        "SnakeRiver"
+    ],
+    [
+        "e8e0kydj",
+        "Zarza"
+    ],
+    [
+        "v8lek27x",
+        "CaveL1ghter"
+    ],
+    [
+        "xk6vkrk8",
+        "chabon"
+    ],
+    [
+        "j9r09lnj",
+        "GameringTime"
+    ],
+    [
+        "18qg6k0x",
+        "Frozt0"
+    ],
+    [
+        "o86morwj",
+        "lowryr"
+    ],
+    [
+        "kjp4y5jq",
+        "snerck"
+    ],
+    [
+        "814weep8",
+        "LegendaryKaneki"
+    ],
+    [
+        "w98r4dj1",
+        "Bensaunders"
+    ],
+    [
+        "v8l4qvjm",
+        "Jezs"
+    ],
+    [
+        "0jmomgn8",
+        "FarmTheHouse"
+    ],
+    [
+        "68wq9o48",
+        "TaoSky"
+    ],
+    [
+        "68wlm9zj",
+        "inalone"
+    ],
+    [
+        "v81dk738",
+        "DontAnnoyMeDH"
+    ],
+    [
+        "qj2ppn78",
+        "Stallzy"
+    ],
+    [
+        "qxkoqe68",
+        "VyZiXeN"
+    ],
+    [
+        "e8edm42x",
+        "Terracottakid"
+    ],
+    [
+        "jm72lkej",
+        "2KLS1"
+    ],
+    [
+        "xyognlzj",
+        "HomieSampson"
+    ],
+    [
+        "kjpqp10x",
+        "Phanji"
+    ],
+    [
+        "jnz90g2j",
+        "Oatmealian"
+    ],
+    [
+        "x3qeon7j",
+        "ByLoro42"
+    ],
+    [
+        "xzy6yerj",
+        "DemolitionGod64"
+    ],
+    [
+        "98rkgmdx",
+        "Vibe"
+    ],
+    [
+        "wdx3oexl",
+        "Illumina"
+    ],
+    [
+        "jmopwmo8",
+        "HorizonCookie"
+    ],
+    [
+        "qjnr3mdx",
+        "HawkDiddlyTV"
+    ],
+    [
+        "qj2m62n8",
+        "Ezze"
+    ],
+    [
+        "pj0z0o48",
+        "Smizzle"
+    ],
+    [
+        "816k9qpx",
+        "victoresto99"
+    ],
+    [
+        "8d3zp5mx",
+        "vinnihongo"
+    ],
+    [
+        "98rp313j",
+        "thepwnagepk"
+    ],
+    [
+        "qjo1or3x",
+        "Cacetinho"
+    ],
+    [
+        "e8egoqdx",
+        "macky121"
+    ],
+    [
+        "98rnpkgx",
+        "irishhellhound6"
+    ],
+    [
+        "8dwv70gj",
+        "goncor"
+    ],
+    [
+        "0jmomzo8",
+        "gab520"
+    ],
+    [
+        "0jmoq1n8",
+        "emptt"
+    ],
+    [
+        "dx3g0k8l",
+        "TheYabsterman"
+    ],
+    [
+        "8rly9qw8",
+        "DoughnutDann"
+    ],
+    [
+        "v8l0rgl8",
+        "Jutschl"
+    ],
+    [
+        "j9v7gqox",
+        "Fixel"
+    ],
+    [
+        "8d4rko98",
+        "haydengames3"
+    ],
+    [
+        "qxkd7mmj",
+        "AjStorm3000"
+    ],
+    [
+        "864gz9wj",
+        "dgxd1973"
+    ],
+    [
+        "8l057428",
+        "CodingKoopa"
+    ],
+    [
+        "zxz3098q",
+        "Swags_The_Dog"
+    ],
+    [
+        "48gzvmpj",
+        "Qmann"
+    ],
+    [
+        "v8lvl3rj",
+        "SayMyName"
+    ],
+    [
+        "qjn72d28",
+        "tigertomd"
+    ],
+    [
+        "jopkvonx",
+        "cuwee"
+    ],
+    [
+        "pj0k67m8",
+        "WafflesTheFox"
+    ],
+    [
+        "qj2y50l8",
+        "OllieClarke8787"
+    ],
+    [
+        "qj20vnnx",
+        "amzy"
+    ],
+    [
+        "qxk7lmj0",
+        "Jonoabbo"
+    ],
+    [
+        "qjn3kk1x",
+        "Jel"
+    ],
+    [
+        "j2yo1k78",
+        "belogicless"
+    ],
+    [
+        "qjnn1r2j",
+        "StopLisaAbuse"
+    ],
+    [
+        "5j52vrnj",
+        "LogaSoba"
+    ],
+    [
+        "x3qp5n6j",
+        "bewbicorn"
+    ],
+    [
+        "e8e60oj0",
+        "ConnorB_"
+    ],
+    [
+        "jn3093dx",
+        "TheSonicJoey"
+    ],
+    [
+        "qjondy08",
+        "miguelg"
+    ],
+    [
+        "48gl0n7x",
+        "ONYXxCHAOS"
+    ],
+    [
+        "jok7gpl8",
+        "AFatedStalemate"
+    ],
+    [
+        "0jmoz2z8",
+        "Senpai"
+    ],
+    [
+        "j5wrlvzj",
+        "alectoides"
+    ],
+    [
+        "y8dkdl5j",
+        "Syncrotion"
+    ],
+    [
+        "jn2rzpwj",
+        "WolfODR"
+    ],
+    [
+        "xk33k3k8",
+        "Skuduko"
+    ],
+    [
+        "zxz96e8q",
+        "Canis"
+    ],
+    [
+        "xyop4owj",
+        "idkfightme"
+    ],
+    [
+        "1xy0gyjr",
+        "TheUltimateGameBoy"
+    ],
+    [
+        "kjpd3y2j",
+        "Metherlence"
+    ],
+    [
+        "8lo2v578",
+        "JankWang"
+    ],
+    [
+        "j4rv56l8",
+        "Xeelium"
+    ],
+    [
+        "joo2z3nj",
+        "Aavalanche00"
+    ],
+    [
+        "xkp4lz2j",
+        "phelnoxgaming"
+    ],
+    [
+        "j967w9vj",
+        "RickSanchez666"
+    ],
+    [
+        "0jmdq3ej",
+        "Scramblaar"
+    ],
+    [
+        "j26wy5px",
+        "Pdog8709"
+    ],
+    [
+        "qjn9r4wx",
+        "MrUltimateVideos"
+    ],
+    [
+        "y8d5vm9j",
+        "Aaron27_"
+    ],
+    [
+        "1xy34mjr",
+        "GiizmoSRL"
+    ],
+    [
+        "j0n5znw8",
+        "Glitchedblood"
+    ],
+    [
+        "jo3lzp7j",
+        "ElNachoLV"
+    ],
+    [
+        "jprd33y8",
+        "DreweySR"
+    ],
+    [
+        "98rmy06j",
+        "Visceral3D"
+    ],
+    [
+        "qjo3ld0j",
+        "Shelldude400"
+    ],
+    [
+        "xz9og2e8",
+        "Buchcase"
+    ],
+    [
+        "98r9k1d8",
+        "Fleakee"
+    ],
+    [
+        "j5p4leg8",
+        "turneystreams"
+    ],
+    [
+        "xko3k768",
+        "ihatejor"
+    ],
+    [
+        "qjo6gdej",
+        "ASS8SSIN"
+    ],
+    [
+        "zxz9q108",
+        "gibbon"
+    ],
+    [
+        "qxk1nzmj",
+        "Ocarinist_Drew"
+    ],
+    [
+        "y8dmr586",
+        "SyluxRuns"
+    ],
+    [
+        "68wk3nz8",
+        "UselessBrit"
+    ],
+    [
+        "866ow908",
+        "DomYato"
+    ],
+    [
+        "x76wggvj",
+        "LyePasta"
+    ],
+    [
+        "8dwz9olj",
+        "Motschi"
+    ],
+    [
+        "48gy0pr8",
+        "Gamingguy63"
+    ],
+    [
+        "xk35vl98",
+        "Boneless117"
+    ],
+    [
+        "0jmmqqej",
+        "Jam"
+    ],
+    [
+        "jpmm6n4j",
+        "EvoJpeg"
+    ],
+    [
+        "pj05nr8w",
+        "HoboInferno"
+    ],
+    [
+        "qxk70k9j",
+        "HiReception"
+    ],
+    [
+        "98rk4d6x",
+        "Keithpaulx2"
+    ],
+    [
+        "v18q10xn",
+        "alexmandi"
+    ],
+    [
+        "8rlo9k38",
+        "Joaking212"
+    ],
+    [
+        "5j595zxv",
+        "derp"
+    ],
+    [
+        "qj2005ox",
+        "culinwino"
+    ],
+    [
+        "jmo1eny8",
+        "NamcoPlayer9871"
+    ],
+    [
+        "68wrwljg",
+        "pokemon3212"
+    ],
+    [
+        "8wk3r0z8",
+        "zeaya"
+    ],
+    [
+        "xz929we8",
+        "naitsa"
+    ],
+    [
+        "8lp7pevj",
+        "ItsBadRat"
+    ],
+    [
+        "x72z9dv8",
+        "G4bichueloLV"
+    ],
+    [
+        "qjnldm4x",
+        "Unlimited"
+    ],
+    [
+        "zx7yvvyx",
+        "20Dan03"
+    ],
+    [
+        "18v52vjl",
+        "Znernicus"
+    ],
+    [
+        "xz0nzwn8",
+        "ThatGuyJoeUK"
+    ],
+    [
+        "kjpy5yjq",
+        "Finja29"
+    ],
+    [
+        "8rp52ydj",
+        "AlekStation97"
+    ],
+    [
+        "e8en9r28",
+        "Aaron"
+    ],
+    [
+        "o860ep8z",
+        "TheGlitched64"
+    ],
+    [
+        "pj000orj",
+        "Turdus_Virginianus"
+    ],
+    [
+        "qxk4z5kj",
+        "CriticalFlaw"
+    ],
+    [
+        "8v53kqvj",
+        "SwordlessTwitchFlip"
+    ],
+    [
+        "5j5z9mqj",
+        "Bubba20"
+    ],
+    [
+        "kj9y79ox",
+        "forgotten12345"
+    ],
+    [
+        "48gynwp8",
+        "SudoTrainer"
+    ],
+    [
+        "zx7qmqv8",
+        "CDRomatron"
+    ],
+    [
+        "8go15y1x",
+        "MainD43"
+    ],
+    [
+        "v815zzlj",
+        "TriangleMan42"
+    ],
+    [
+        "18qogoqj",
+        "Craigelbagel001"
+    ],
+    [
+        "kjpeyd0x",
+        "mrteacat"
+    ],
+    [
+        "jmo9v0e8",
+        "cspasta"
+    ],
+    [
+        "qxk102j0",
+        "Duke_Bilgewater"
+    ],
+    [
+        "x3qwqp2j",
+        "IamEmo"
+    ],
+    [
+        "kv81vr8p",
+        "Neke4President"
+    ],
+    [
+        "qj20ynnx",
+        "lennonfire22"
+    ],
+    [
+        "1xygrvmx",
+        "Elesia"
+    ],
+    [
+        "y8d3n9mx",
+        "Surani"
+    ],
+    [
+        "e8e9kzpj",
+        "maskew"
+    ],
+    [
+        "kjp6v228",
+        "Lukasmbraga"
+    ],
+    [
+        "qjo34z0j",
+        "Milkyway_Squid"
+    ],
+    [
+        "98rqvq6x",
+        "sabbra"
+    ],
+    [
+        "v8lkn3rx",
+        "HotCoffee"
+    ],
+    [
+        "j0no5wm8",
+        "Trizze"
+    ],
+    [
+        "xyqlmon8",
+        "orang_hutan"
+    ],
+    [
+        "e8ev7zox",
+        "EternalDB"
+    ],
+    [
+        null,
+        "bej_"
+    ]
+])
+
+const categories = [
+  "mndxp12q", // All Story Missions
+  "prkleq2n", // Any%
+  "7wk6oqk1", // 100%
+  "z273lzd0", // NG+
+  "xw201vkn", // No Mission Warps
+  "z27o7x5d"  // All Tasks NLR
+];
+
+const apiUrlBase = "https://www.speedrun.com/api/v1/leaderboards/m9dok31p/category/";
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sortButtons = document.querySelectorAll('.button-link');
+    const toggle = document.getElementById('toggle');
+    
+    if (sortButtons.length > 0) {
+        sortButtons[0].classList.add('active'); // Ajouter 'active' au premier bouton
+        getLeaderboardData(sortButtons[0].getAttribute('data-sort')); // Charger les données du leaderboard avec le premier tri
+    }
+    
+    sortButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Retirer la classe 'active' de tous les boutons
+            sortButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Ajouter la classe 'active' au bouton cliqué
+            button.classList.add('active');
+            
+            // Récupérer la méthode de tri du bouton et mettre à jour le leaderboard
+            const sortMethod = button.getAttribute('data-sort');
+            getLeaderboardData(sortMethod);
+        });
+    });
+
+    // Appliquer le filtre quand le toggle change
+    toggle.addEventListener('change', () => {
+        getLeaderboardData();  // Récupérer à nouveau les données avec le filtre
+    });
+});
+
+// Fonction pour récupérer et mettre à jour les données du leaderboard
+async function getLeaderboardData(sortMethod = "totalTime") {
+    try {
+        const tableBody = document.getElementById('players-table-body');
+
+        // Récupération des données des catégories
+        const categoryPromises = categories.map(fetchCategoryData);
+        const categoryResults = await Promise.all(categoryPromises);
+
+        // Mise à jour du leaderboard
+        updateLeaderboard(categoryResults, sortMethod);
+    } catch (error) {
+        console.error("Erreur lors de la récupération des données :", error);
+    }
+}
+
+// Fonction pour récupérer les données de chaque catégorie
+async function fetchCategoryData(category) {
+    const url = `${apiUrlBase}${category}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    return data.data.runs;
+}
+
+// Fonction pour mettre à jour le leaderboard
+function updateLeaderboard(categoriesData, sortMethod) {
+    const tableBody = document.getElementById('players-table-body');
+    tableBody.innerHTML = ""; // Vider le tableau avant de le remplir
+
+    const playersData = [];
+    let userRank = null;
+
+    playerData.forEach((playerName, playerId) => {
+        const row = document.createElement("tr");
+
+        // Cellule du nom du joueur
+        const playerCell = document.createElement("td");
+        playerCell.textContent = playerName;
+        row.appendChild(playerCell);
+
+        let totalTime = 0;
+        let hasAllCategories = true;
+        const categoryTimes = [];
+        categoriesData.forEach((categoryData, index) => {
+            const runs = categoryData.map(run => {
+                const player = run.run.players[0];
+                const playerIdOrName = player.id || player.name || "Unknown Player";
+                return { time: run.run.times.primary_t, player: playerIdOrName };
+            });
+
+            // Tri des runs dans chaque catégorie par temps
+            runs.sort((a, b) => a.time - b.time);
+
+            // Trouver le rang du joueur actuel dans la catégorie
+            const playerRank = runs.findIndex(run => run.player === (playerId || playerName)) + 1;
+
+            const timeCell = document.createElement("td");
+            let timeInSeconds = null;
+
+            // Trouver le temps du joueur dans la catégorie
+            const run = runs.find(run => run.player === (playerId || playerName));
+
+            if (run) {
+                timeInSeconds = run.time;
+                totalTime += timeInSeconds;
+                timeCell.textContent = `${formatTime(timeInSeconds)} (${playerRank})`; // Affichage du temps avec rang
+            } else {
+                timeCell.textContent = "-";
+                hasAllCategories = false;
+            }
+
+            categoryTimes.push(timeInSeconds);
+            row.appendChild(timeCell);
+        });
+
+        // Si un joueur n'a pas de temps dans toutes les catégories, on réinitialise totalTime à 0
+        if (!hasAllCategories) totalTime = 0;
+
+        // Cellule de la somme des temps (dernière colonne)
+        const sumCell = document.createElement("td");
+        sumCell.textContent = hasAllCategories ? formatTime(totalTime) : "-";
+        row.appendChild(sumCell);
+
+        // Ajouter les données du joueur à playersData
+        playersData.push({ row, hasAllCategories, totalTime, categoryTimes });
+    });
+
+    // Trier les joueurs selon la méthode choisie
+    playersData.sort((a, b) => {
+        switch (sortMethod) {
+            case "totalTime":
+                return compareByAllCategories(a, b);
+            case "asm":
+                return compareByCategory(a, b, 0);
+            case "any%":
+                return compareByCategory(a, b, 1);
+            case "hundo":
+                return compareByCategory(a, b, 2);
+            case "ng+":
+                return compareByCategory(a, b, 3);
+            case "nmw":
+                return compareByCategory(a, b, 4);
+            case "atnlr":
+                return compareByCategory(a, b, 5);
+            default:
+                return 0;
+        }
+    });
+
+    // Ajouter les lignes triées à la table
+    playersData.forEach(playerData => {
+        tableBody.appendChild(playerData.row);
+    });
+
+    // Appliquer le filtre après avoir mis à jour le leaderboard
+    filterPlayersBySixthColumn(playersData);
+}
+
+// Fonction pour formater le temps (en secondes)
+function formatTime(seconds) {
+    if (seconds === null) return "-";
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+    const sec = seconds % 60;
+    return `${hours}h ${formattedMinutes}m ${sec}s`;
+}
+
+
+// Fonction pour formater le temps (en secondes)
+function formatTime(seconds) {
+    if (seconds === null) return "-";
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+    const sec = seconds % 60;
+    return `${hours}h ${formattedMinutes}m ${sec}s`;
+}
+
+// Fonction pour trier par une catégorie spécifique
+function compareByCategory(a, b, categoryIndex) {
+    const aValue = a.categoryTimes[categoryIndex];
+    const bValue = b.categoryTimes[categoryIndex];
+
+    if (aValue !== null && bValue !== null) return aValue - bValue;
+
+    if (aValue !== null && bValue === null) return -1;
+    if (aValue === null && bValue !== null) return 1;
+
+    return 0;
+}
+
+function compareByAllCategories(a, b) {
+    // Si l'un des joueurs n'a pas de temps dans toutes les catégories, on le place plus bas
+    if (!a.hasAllCategories && b.hasAllCategories) return 1;
+    if (a.hasAllCategories && !b.hasAllCategories) return -1;
+
+    // Comparer par le temps total si tous les joueurs ont des temps dans toutes les catégories
+    if (a.totalTime !== b.totalTime) return a.totalTime - b.totalTime;
+
+    // Comparaison des temps dans la catégorie ASM (la première catégorie)
+    if (a.categoryTimes[0] === null && b.categoryTimes[0] !== null) return 1; // Si a n'a pas de temps dans la catégorie ASM mais b en a
+    if (a.categoryTimes[0] !== null && b.categoryTimes[0] === null) return -1; // Si a a un temps dans la catégorie ASM mais b n'en a pas
+    if (a.categoryTimes[0] !== b.categoryTimes[0]) return a.categoryTimes[0] - b.categoryTimes[0]; // Comparer les temps de la catégorie ASM
+
+    return 0;
+}
+
+function filterPlayersBySixthColumn(playersData) {
+    const tableBody = document.getElementById('players-table-body');
+    const rows = tableBody.querySelectorAll('tr');
+
+    rows.forEach((row) => {
+        const cells = row.querySelectorAll('td');
+        const lastColumnValue = cells[7]?.textContent.trim(); // Vérifier que la colonne existe
+
+        if (toggle.checked) {
+            if (!lastColumnValue || lastColumnValue === "-") {
+                row.style.display = "none"; 
+            } else {
+                row.style.display = "";
+            }
+        } else {
+            row.style.display = "";
+        }
+    });
+}
+
+

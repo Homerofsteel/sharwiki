@@ -1,0 +1,950 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+@font-face {
+    font-family: "Simpsons";
+    src: local("Simpsons"),
+         url("Simpsons.otf") format("opentype") tech(color-COLRv1);
+}
+
+@font-face {
+    font-family: "Wayoshi";
+    src: local("Wayoshi"),
+         url("wayoshi.ttf") format("truetype") tech(color-COLRv1), url("wayoshi.ttf");
+}
+
+@font-face {
+    font-family: "Mario256";
+    src: local("Mario256"),
+         url("Mario256.ttf") format("truetype") tech(color-COLRv1), url("Mario256.ttf");
+}
+
+.simpsons-font {
+    font-family: Simpsons;
+    flex-direction: row;
+}
+
+.main-site-title {
+    font-family: Simpsons;
+    background: yellow;
+    border: 4px solid black;
+    font-size: 22px;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 black,  /* Ombre en haut à gauche */
+    1px -1px 0 black,   /* Ombre en haut à droite */
+    -1px 1px 0 black,   /* Ombre en bas à gauche */
+    1px 1px 0 black;
+    width: 99.3%;
+}
+
+.page-title {
+    font-family: Simpsons;
+    font-size: 50px;
+    padding-right: 15px;
+    margin: 30px 0 15px;
+    text-align: center;
+}
+
+.search-form {
+    position: absolute;
+    top: 30px;
+    left: 550px;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+
+table {
+    line-height: 25px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+    width: 93.2%;
+    margin-bottom: 30px;
+    float: right;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+td {
+    line-height: 35px;
+    font-size: 16px;
+    height: 15px;
+    width: 10%;
+}
+
+th {
+    font-size: 22px;
+}
+
+.tableau {
+    text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.paragraphe {
+    font-size: 20px;
+    margin: 0 15px 0 91px;
+    line-height: 27px;
+}
+
+li {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 3px;
+}
+
+li ul {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.tab, .subtab {
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: #f1f1f1;
+    position: relative;
+    width: 100%;
+}
+
+
+.subtab {
+    display: flex;
+    justify-content: center;
+}
+
+.tab button, .subtab button {
+    background-color: inherit;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 25px;
+    transition: 0.3s;
+    display: block;
+}
+
+.tab button {
+    font-size: 15px;
+    float: left;
+    width: 16.66%;
+}
+
+.subtab button {
+    font-size: 30px;
+    font-family: Mario256;
+    width: 50%;
+    justify-content: center;
+}
+
+.tab button:hover, .subtab button:hover {
+    background-color: yellow;
+}
+
+.tablinks.active, .subtab button.active {
+    background-color: grey;
+}
+
+.tabcontent, .subtabcontent {
+    display: none;
+    margin-top: 40px;
+}
+
+.subtabcontent {
+    border: 3px solid;
+    border-radius: 30px;
+    margin: 15px 0 20px;
+    overflow: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.subtabcontent.active {
+    display: block;
+}
+
+#tab1 {
+    border-color: yellow;
+}
+
+#tab2 {
+    border-color: green;
+}
+
+.subtitle {
+    font-size: 40px;
+    text-align: center;
+    font-family: Wayoshi;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+tr {
+    background-color: lightblue;
+}
+
+video {
+    display: block;
+    margin: 0 auto 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.scroller {
+    height: 30px;
+}
+
+.button-retour {
+    width: 40px;
+    margin: 0 10px;
+}
+
+.button-return1, .button-return2 {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    display: flex;
+    width: 190px;
+}
+
+.button-return1 {
+    margin-left: 10px;
+    float: left;
+}
+
+.button-return2 {
+    margin-right: 10px;
+    float: right;
+}
+
+.button-return1:hover, .button-return2:hover {
+    background-color: yellow;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+hr {
+    color: red;
+    width: 80%;
+}
+
+    .main-site-title {
+        font-size: 20px;
+        width: 99.4%;
+    }
+
+    .search-form {
+        left: 400px;
+    }
+
+    .tab button, .subtab button {
+        padding: 30px;
+        font-size: 22px;
+    }
+
+    .tableau, table {
+        width: 90%;
+    }
+
+    td, th {
+        font-size: 20px;
+    }
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; /* Centrer le conteneur horizontalement */
+}
+
+/* Style de l'iframe */
+iframe {
+    width: 100%; /* Remplir tout l'espace disponible */
+    aspect-ratio: 16/9; /* Ratio 16:9 */
+    border: none; /* Retirer la bordure par défaut */
+    border-radius: 10px; /* Coins arrondis optionnels */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre optionnelle */
+    margin-bottom: 30px;
+}
+
+.menu-container {
+    position: relative;
+}
+
+/* Icône du menu */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Position initiale du bouton en haut */
+    left: 20px; /* Position initiale du bouton à gauche */
+    z-index: 1000;
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: top 0.3s ease-in-out, left 0.3s ease-in-out; /* Transition fluide pour top et left */
+}
+
+/* Lorsque le bouton devient fixe */
+.menu-icon.fixed {
+    position: fixed;
+    top: 10px; /* Le bouton reste en haut de la page */
+    left: 20px; /* Position horizontale à gauche */
+    transition: top 0.3s ease-in-out; /* Transition fluide uniquement pour le top */
+}
+
+/* Menu de navigation */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Menu masqué à gauche au départ */
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    transition: left 0.3s ease-in-out; /* Transition fluide pour l'ouverture du menu */
+}
+
+/* Menu de navigation ouvert */
+.nav-menu.open {
+    left: 0; /* Menu visible */
+}
+
+/* Liste du menu */
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Éléments du menu */
+.nav-menu li {
+    border-bottom: 1px solid #555;
+    position: relative;
+}
+
+/* Liens du menu */
+.nav-menu a {
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+/* Survol des liens du menu */
+.nav-menu a:hover {
+    background-color: #555;
+    padding-left: 30px;
+}
+
+/* Indicateur du sous-menu (flèche) */
+.submenu-indicator {
+    font-size: 14px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Masquer le sous-menu */
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+/* Sous-menu visible quand l'élément est actif */
+.menu-item.active .submenu {
+    display: block;
+}
+
+/* Rotation de l'indicateur de sous-menu */
+.menu-item.active .submenu-indicator {
+    transform: rotate(180deg);
+}
+
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    transition: max-height 0.4s ease-out;
+}
+
+.panel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.panel p {
+    margin: 10px 0;
+}
+
+.accordion::after {
+    content: "\f078"; /* Unicode for Font Awesome down arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 25px; /* Taille de l'icône */
+    margin-left: auto; /* Pour l'aligner à droite */
+    transition: transform 0.4s;
+}
+
+.accordion.active::after {
+    content: "\f077"; /* Unicode for Font Awesome up arrow */
+    transform: rotate(180deg); /* Rotation pour l'effet */
+}
+
+.panel.show {
+    max-height: 500px; /* Ajustez en fonction de votre contenu */
+}
+
+.video-container-setup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les vidéos */
+    justify-content: center;
+}
+
+.video-item {
+    width: 45%; /* Chaque vidéo prend 45% de la largeur */
+    text-align: center;
+}
+
+
+/* Conteneur des boutons */
+.button-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crée 2 colonnes égales */
+    gap: 20px; /* Espacement entre les boutons */
+    max-width: 80%; /* Augmente la largeur totale du conteneur */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+    padding: 20px; /* Marge autour des boutons */
+}
+
+/* Chaque bouton */
+.button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Prend toute la largeur du conteneur */
+    min-height: 100px; /* Hauteur plus grande */
+    height: auto; /* Laisse la hauteur s'ajuster automatiquement */
+    margin: auto;
+    border: 2px solid black; /* Bordure autour des boutons */
+    border-radius: 15px; /* Coins arrondis */
+    background-color: white; /* Fond blanc */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition douce pour les effets */
+}
+
+/* Appliquer hover et active au bouton complet */
+.button-link:hover {
+    background-color: #d3d3d3; /* Fond gris clair au survol */
+    transform: translateY(-4px); /* Légère montée au survol */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25); /* Ombre portée */
+}
+
+.button-link:active {
+    background-color: #b0b0b0; /* Gris moyen lors du clic */
+    transform: translateY(2px); /* Légère descente lors du clic */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Ombre plus légère lors du clic */
+}
+
+/* Le lien à l'intérieur du bouton */
+.button-link a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+    font-family: Mario256, sans-serif;
+    width: 100%; /* Prend toute la largeur du bouton */
+    height: 100%; /* Prend toute la hauteur du bouton */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#GoogleDrive {
+    position: relative; /* Nécessaire pour centrer le lien interne */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Largeur du bouton */
+    height: 100px; /* Hauteur du bouton */
+    margin: 0 auto; /* Centre horizontalement dans le conteneur */
+    border: 2px solid black; /* Bordure autour du bouton */
+    border-radius: 15px; /* Coins arrondis */
+    background-color: white; /* Fond blanc */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+
+.tips-list {
+    list-style-type: disc; /* Utilise des points pour chaque élément */
+    margin-left: 20px; /* Espace à gauche pour les points */
+    line-height: 1.8; /* Augmente l'interligne entre chaque élément */
+}
+
+.tips-list li {
+    margin-bottom: 15px; /* Ajoute de l'espace entre chaque ligne */
+    font-size: 1.1rem; /* Augmente légèrement la taille du texte pour la lisibilité */
+}
+
+.links-container a {
+    display: inline-block; /* Utilisation de flexbox */
+    justify-content: center; /* Centre le texte horizontalement */
+    align-items: center; /* Centre le texte verticalement */
+    width: 250px; /* Largeur uniforme */
+    color: black; /* Couleur du texte en noir */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid black; /* Bordure noire */
+    border-radius: 5px;
+    background-color: white; /* Fond blanc */
+    margin: 10px auto; /* Espacement entre les boutons */
+    transition: all 0.3s ease; /* Transition fluide pour le survol */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+/* Effet au survol */
+.links-container a:hover {
+    color: black;
+    background-color: #d3d3d3; /* Fond gris clair au survol */
+    transform: translateY(-4px); /* Légère montée au survol */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet de faire passer les éléments à la ligne si nécessaire */
+    justify-content: space-around; /* Aligne les éléments au centre avec un espace égal */
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+.content-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    position: relative;
+    text-align: center;
+}
+
+.content {
+    display: none;
+    margin-bottom: 20px;
+    overflow: hidden; /* Pour arrondir les coins avec bordure */
+    text-align: center; /* Centrer le contenu */
+}
+
+.content img {
+    border: 5px solid black;
+    border-radius: 10px;
+    width: calc(100% - 10px); /* Pour compenser la bordure */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrer l'image */
+}
+
+.content.active {
+    display: block;
+}
+
+.cars-button {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+.cars-button:hover {
+    color: black;
+    background-color: #d3d3d3; /* Fond gris clair au survol */
+    transform: translateY(-4px); /* Légère montée au survol */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.search-container {
+position: relative;
+width: 300px;
+margin: 0 auto;
+padding-top: 50px;
+}
+
+#search-input {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
+}
+
+.suggestions-box {
+position: absolute;
+top: 100%; /* Positionner les suggestions juste en dessous de l'input */
+left: 0;
+width: 100%;
+border: 1px solid #ccc;
+border-top: none;
+background-color: white;
+max-height: 200px;
+overflow-y: auto;
+z-index: 1000; /* Pour s'assurer que les suggestions sont au-dessus des autres éléments */
+box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
+}
+
+.suggestion {
+display: flex;
+align-items: center;
+padding: 10px;
+cursor: pointer;
+border-bottom: 1px solid #ccc; /* Ajouter une bordure pour séparer les suggestions */
+}
+
+.suggestion img {
+width: 70px;
+height: 70px;
+margin-right: 10px;
+object-fit: cover; /* Recadrer l'image */
+object-position: 20%; /* Centrer l'image dans le cadre */
+border-radius: 2px; /* Optionnel : arrondir les coins */
+margin: 0;
+
+}
+
+.suggestion span {
+flex: 1;
+margin-left: 10px; /* Assurez-vous que le texte est bien positionné après l'image */
+}
+
+.suggestion:hover {
+background-color: #f0f0f0;
+}
+
+#Story\ Missions {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+/* Titre */
+.title {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+/* Listes de niveaux */
+.levels {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.level h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.level ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0;       /* Supprime le retrait interne */
+    margin: 0;        /* Supprime le retrait externe */
+}
+
+/* Boutons des missions */
+.mission-btn {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, font-size 0.3s ease;
+}
+
+/* Effet de survol */
+.mission-btn:hover {
+    transform: scale(1.05);
+    background-color: yellow;
+    font-size: 27px;
+}
+
+/* Boutons désactivés */
+.mission-btn:disabled {
+    background-color: lightgray;
+    border-color: gray;
+    cursor: not-allowed;
+}
+
+.level h3 {
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0;          /* Supprime les marges par défaut */
+    font-size: 1.8em;   /* Ajuste la taille du texte (si nécessaire) */
+}
+
+/* Ajoute une bordure au menu déroulant */
+.level {
+    border: 2px solid #ccc; /* Bordure */
+    border-radius: 8px;     /* Coins arrondis */
+    margin: 10px 0;         /* Espacement entre les niveaux */
+    overflow: hidden;       /* Cache le contenu qui dépasse lors de l'animation */
+}
+
+/* Ajoute une transition fluide pour le déroulement */
+.dropdown-content {
+    max-height: 0;          /* Hauteur initiale */
+    overflow: hidden;       /* Cache le contenu */
+    transition: max-height 0.3s ease-out; /* Animation fluide */
+    background-color: #f9f9f9; /* Couleur de fond */
+}
+
+/* Affiche la sous-liste avec l'animation */
+.level.open .dropdown-content {
+    max-height: 1000px; /* Hauteur suffisante pour contenir tous les éléments */
+}
+
+/* Améliore l'apparence des titres */
+.dropdown-title {
+    cursor: pointer;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc; /* Séparation entre le titre et le contenu */
+    border-radius: 8px 8px 0 0; /* Coins arrondis en haut */
+    user-select: none;
+}
+
+/* Ajoute un effet visuel quand le menu est ouvert */
+.level.open .dropdown-title {
+    background-color: #ddd;
+}
+
+/* Bordure arrondie pour la fin de la liste déroulante */
+.level.open .dropdown-content {
+    border-radius: 0 0 8px 8px;
+}
+
+/* Conteneur des boutons de tri */
+.sort-buttons-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.sort-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: yellow;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.sort-button:hover {
+    background-color: #45a049;
+}
+
+.sort-button:active {
+    background-color: #388e3c;
+}
+
+/* Conteneur du tableau */
+.table-container {
+    overflow-x: auto;
+    width: 90%;
+}
+
+/* Tableau */
+#times-table {
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 20px;
+    table-layout: fixed;
+}
+
+#times-table th, #times-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    
+}
+
+#times-table th {
+    background: lightgrey;
+    color: black;
+}
+
+#times-table td {
+    background-color: #f9f9f9;
+}
+
+#times-table tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+#times-table tr:hover td {
+    background-color: #ddd;
+}
+
+    #times-table {
+        font-size: 14px;
+    }
+
+    #times-table th, #times-table td {
+        padding: 8px;
+    }
+
+    .sort-buttons-container {
+        width: 85%;
+    }
+/* Conteneur pour le texte à gauche et le toggle */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligne tous les éléments à gauche */
+    gap: 10px; /* Espace entre le texte à gauche et le toggle */
+}
+
+/* Style du texte à gauche */
+.toggle-text-left {
+    font-size: 16px;
+    user-select: none;
+    margin-right: 130px;
+}
+
+/* Style du label qui contient le toggle et le texte */
+.toggle-label {
+    display: flex;
+    align-items: center; /* Aligne le texte et le switch verticalement */
+    gap: 10px; /* Espacement entre le toggle et le texte */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Transition douce pour l'ensemble du label */
+}
+
+/* Agrandissement au survol pour le texte et le switch */
+.toggle-label:hover {
+    transform: scale(1.1); /* Agrandissement global du label (texte + toggle) */
+}
+
+/* Effet d'agrandissement au survol uniquement sur le texte */
+.toggle-label:hover .toggle-text {
+    transform: scale(1.15); /* Agrandissement du texte */
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left; /* Fixe le point d'agrandissement à gauche */
+}
+
+/* Style du toggle (switch) */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.4s, transform 0.3s ease-in-out; /* Transition pour agrandir aussi le switch */
+}
+
+/* Ajout du petit rond à l'intérieur du switch */
+.toggle-switch::before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+/* Supprimer le carré blanc par défaut du checkbox */
+.toggle-label input {
+    display: none;
+}
+
+/* Changement de couleur lorsque activé */
+input:checked + .toggle-switch {
+    background-color: #2196F3;
+}
+
+/* Déplacement du rond lorsqu'activé */
+input:checked + .toggle-switch::before {
+    transform: translateX(26px);
+}
+
+/* Texte à côté du toggle */
+.toggle-text {
+    font-size: 16px;
+    user-select: none;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left; /* Fixe le point de zoom */
+}

@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "node-fetch": "npm:node-fetch@^3.3.2"
+  }
+}
