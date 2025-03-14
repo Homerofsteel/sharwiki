@@ -3,10 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Affichage des noms des joueurs</title>
+    <title>Page Responsive</title>
+    <style>
+        /* Style de base */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media query pour petits écrans */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                width: 80%;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+
+        /* Media query pour très petits écrans */
+        @media (max-width: 480px) {
+            header {
+                font-size: 18px;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Afficher les noms des joueurs dans la console</h1>
-    <script src="test.js"></script>
+
+    <header>
+        <h1>Page de Test Responsive</h1>
+    </header>
+
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Services</a>
+        <a href="#">À propos</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="content">
+        <div class="box">Contenu 1</div>
+        <div class="box">Contenu 2</div>
+        <div class="box">Contenu 3</div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Test Responsive</p>
+    </footer>
+
 </body>
 </html>

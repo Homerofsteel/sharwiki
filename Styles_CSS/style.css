@@ -1,9 +1,63 @@
-body {
+/* Assure que html et body prennent toute la largeur et la hauteur de l'écran */
+html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: scroll;
 }
+
+/* Conteneur principal de .main-site-title */
+.main-site-title {
+    display: flex; /* Utilise Flexbox pour aligner l'image et le texte */
+    align-items: center; /* Centre l'image et le texte verticalement */
+    font-family: Simpsons;
+    background: yellow;
+    border: 4px solid black;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 black,  /* Ombre en haut à gauche */
+        1px -1px 0 black,   /* Ombre en haut à droite */
+        -1px 1px 0 black,   /* Ombre en bas à gauche */
+        1px 1px 0 black;
+    height: 12%; /* Hauteur définie pour la section */
+    justify-content: flex-start; /* Assure que tout commence à gauche */
+}
+
+/* Image */
+.main-site-title img {
+    width: 9%; /* Taille de l'image ajustée pour que l'image ne prenne pas trop de place */
+    min-width: 50px; /* Taille minimale de l'image */
+    margin-right: 5%; /* Espacement entre l'image et le texte */
+}
+
+/* Texte */
+.main-site-title p {
+    font-size: 36px; /* Taille de texte par défaut */
+    margin: 0;
+    white-space: nowrap; /* Évite que le texte se divise sur plusieurs lignes */
+    overflow: hidden; /* Cache le texte qui dépasse */
+    text-overflow: ellipsis; /* Ajoute des points de suspension pour les débordements */
+    transform: scale(1); /* Pas de scale par défaut */
+    text-align: left; /* Aligné à gauche */
+    padding-left: 10px; /* Espacement entre l'image et le texte */
+    flex-grow: 1; /* Permet au texte d'occuper l'espace restant */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+/* Media query pour ajuster la taille du texte sur des écrans plus petits */
+@media (max-width: 768px) {
+    .main-site-title p {
+        font-size: 22px; /* Réduit la taille du texte pour les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-site-title p {
+        font-size: 26px; /* Taille du texte un peu plus grande pour les très petits écrans */
+    }
+}
+
 
 @font-face {
     font-family: "Simpsons";
@@ -26,20 +80,6 @@ body {
 .simpsons-font {
     font-family: Simpsons;
     flex-direction: row;
-}
-
-.main-site-title {
-    font-family: Simpsons;
-    background: yellow;
-    border: 4px solid black;
-    font-size: 22px;
-    color: white;
-    text-shadow: 
-    -1px -1px 0 black,  /* Ombre en haut à gauche */
-    1px -1px 0 black,   /* Ombre en haut à droite */
-    -1px 1px 0 black,   /* Ombre en bas à gauche */
-    1px 1px 0 black;
-    width: 99.3%;
 }
 
 .page-title {
@@ -153,6 +193,7 @@ li ul {
 
 .tablinks.active, .subtab button.active {
     background-color: grey;
+    pointer-events: none;
 }
 
 .tabcontent, .subtabcontent {
@@ -462,7 +503,6 @@ iframe {
     text-align: center;
 }
 
-
 /* Conteneur des boutons */
 .button-links {
     display: grid;
@@ -478,6 +518,7 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Nécessaire pour le positionnement absolu du lien */
     width: 90%; /* Prend toute la largeur du conteneur */
     min-height: 100px; /* Hauteur plus grande */
     height: auto; /* Laisse la hauteur s'ajuster automatiquement */
@@ -498,24 +539,36 @@ iframe {
 .button-link:active {
     background-color: #b0b0b0; /* Gris moyen lors du clic */
     transform: translateY(2px); /* Légère descente lors du clic */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Ombre plus légère lors du clic */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Le lien à l'intérieur du bouton */
 .button-link a {
-    display: block;
+    position: absolute; /* Positionner le lien de manière absolue */
+    top: 0; /* Aligne le lien en haut */
+    left: 0; /* Aligne le lien à gauche */
+    right: 0; /* Aligne le lien à droite */
+    bottom: 0; /* Aligne le lien en bas */
     text-decoration: none;
     color: black;
     padding: 20px;
     font-size: 22px;
     text-align: center;
     font-family: Mario256, sans-serif;
-    width: 100%; /* Prend toute la largeur du bouton */
-    height: 100%; /* Prend toute la hauteur du bouton */
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box; /* Inclut les bordures et le padding dans la taille totale */
 }
+
+
+/* Media query pour petits écrans */
+@media (max-width: 768px) {
+    .button-links {
+        grid-template-columns: 1fr; /* Affiche un bouton par ligne */
+    }
+}
+
 
 #GoogleDrive {
     position: relative; /* Nécessaire pour centrer le lien interne */
@@ -684,10 +737,23 @@ background-color: #f0f0f0;
     margin: auto;
 }
 
+#Bonus\ Missions {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+#Street\ Races {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
 /* Titre */
 .title {
     font-size: 50px;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 /* Listes de niveaux */
