@@ -48,13 +48,20 @@ html, body {
 /* Media query pour ajuster la taille du texte sur des écrans plus petits */
 @media (max-width: 768px) {
     .main-site-title p {
-        font-size: 22px; /* Réduit la taille du texte pour les petits écrans */
+        font-size: 18px; /* Réduit la taille du texte pour les petits écrans */
+    }
+    .main-site-title {
+        height: 8%;
+    }
+    .main-site-title img {
+        width: 15%;
+        margin-right: 2%;
     }
 }
 
 @media (max-width: 480px) {
     .main-site-title p {
-        font-size: 26px; /* Taille du texte un peu plus grande pour les très petits écrans */
+        font-size: 22px; /* Taille du texte un peu plus grande pour les très petits écrans */
     }
 }
 
